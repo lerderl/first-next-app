@@ -1,5 +1,13 @@
+import Link from "next/link";
 export default function Home() {
   return (
-    <div>Hello, it&apos;s me Joseph!</div>
+    <div>
+      <div>
+        <Link href="/performance">Performance</Link>
+        <Link href="/reliability">Reliability</Link>
+        <Link href="/scale">Scale</Link>
+      </div>
+      Hello, it&apos;s me Joseph!
+    </div>
   );
 }
