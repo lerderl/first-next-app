@@ -46,3 +46,20 @@ Had to run the command below to enable me to create this application by installi
 ```bash
 npm install -g npm@latest
 ```
+
+### Issues with Images
+
+If you have any issues with the imports, please try one of the following two solutions:
+
+1. Update your tsconfig.json's path field to look like this:
+
+    "paths": {
+      "@/*": ["./src/*"],
+      "public/*": ["./public/*"]
+    }
+
+Make sure to fully restart your server before testing again.
+
+2.Add a / character in front of public anytime you need to import a static image:
+
+import homeImg from './public/home.jpg';
