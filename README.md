@@ -85,3 +85,11 @@ npx prisma migrate dev
 ```
 
 Then give the new migration a name
+
+### Creating Records
+
+1. Create a prisma client to access the database
+2. Create a form in SnippetCreatePage
+3. Define a Server Action. This is a function that will be called when the form is submitted.
+4. In the Server Action, validate the users input then create a new snippet
+5. Redirect the user to the Home Page, which lists all the snippets
