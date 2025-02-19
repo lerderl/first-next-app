@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app)
 
 ## Getting Started
 
@@ -63,3 +63,25 @@ Make sure to fully restart your server before testing again.
 2.Add a / character in front of public anytime you need to import a static image:
 
 import homeImg from './public/home.jpg';
+
+### Prisma Installation
+
+Run the command
+
+```bash
+npm install prisma
+```
+
+Initialize prisma using
+
+```bash
+npx prisma init --datasource-provider sqlite
+```
+
+Using new defination in the schema to create our sqlite database
+
+```bash
+npx prisma migrate dev
+```
+
+Then give the new migration a name
